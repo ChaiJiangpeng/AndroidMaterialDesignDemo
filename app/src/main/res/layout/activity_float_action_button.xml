@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/coordinator"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:padding="15dp"
+            android:textSize="24sp"/>
+    </ScrollView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@id/content"
+        app:layout_anchorGravity="right|bottom"
+        app:backgroundTint="@color/colorPrimary"
+        android:layout_margin="15dp"
+        android:src="@drawable/ic_index_dashboard"
+        app:borderWidth="0dp"
+        app:rippleColor="@color/colorPrimaryDark"
+        app:elevation="8dp"
+        app:pressedTranslationZ="15dp"
+        app:useCompatPadding="false"
+        app:fabSize="normal"/>
+
+</android.support.design.widget.CoordinatorLayout>
+
