@@ -12,12 +12,16 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         cv1.setOnClickListener(this@MainActivity)
+        cv2.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
         when(v!!.id){
             cv1.id->{
                 startActivity(Intent(this@MainActivity,FloatingActionButtonActivity::class.java))
+            }
+            cv2.id->{
+                startActivity(Intent(this@MainActivity,SnackbarActivity::class.java))
             }
         }
     }
