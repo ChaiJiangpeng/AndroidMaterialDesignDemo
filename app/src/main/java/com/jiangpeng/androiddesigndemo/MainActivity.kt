@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_main)
         cv1.setOnClickListener(this@MainActivity)
         cv2.setOnClickListener(this)
+        cv3.setOnClickListener(this)
     }
 
     override fun onClick(v: View?) {
@@ -22,6 +23,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
             cv2.id->{
                 startActivity(Intent(this@MainActivity,SnackbarActivity::class.java))
+            }
+            cv3.id->{
+                startActivity(Intent(this@MainActivity,TextInputLayoutActivity::class.java))
             }
         }
     }

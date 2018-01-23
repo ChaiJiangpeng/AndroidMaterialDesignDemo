@@ -26,6 +26,10 @@
             android:name=".SnackbarActivity"
             android:label="Snackbar"
             android:screenOrientation="portrait"/>
+        <activity
+            android:name=".TextInputLayoutActivity"
+            android:label="TextInputLayout"
+            android:screenOrientation="portrait"/>
 
     </application>
 
